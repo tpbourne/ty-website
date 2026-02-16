@@ -157,40 +157,33 @@
         </div>
     </section>
 
-    <!-- CONTACT SECTION (NETLIFY FORMS ENABLED) -->
-    <section id="contact" class="py-20 bg-white">
-        <div class="max-w-2xl mx-auto px-4">
-            <div class="text-center mb-10">
-                <h2 class="text-3xl font-bold text-tyBlue">Let's Get Started</h2>
-                <p class="text-gray-600 mt-2">Fill out the form below for a free 15-minute brainstorm. No pressure, just ideas.</p>
-            </div>
-
-            <form name="contact" method="POST" data-netlify="true" class="space-y-6">
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-1">Name</label>
-                        <input type="text" name="name" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-tyOrange focus:border-transparent outline-none transition">
-                    </div>
-                    <div>
-                        <label class="block text-sm font-medium text-gray-700 mb-1">Business Name</label>
-                        <input type="text" name="business" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-tyOrange focus:border-transparent outline-none transition">
-                    </div>
-                </div>
-                <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
-                    <input type="email" name="email" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-tyOrange focus:border-transparent outline-none transition">
-                </div>
-                <div>
-                    <label class="block text-sm font-medium text-gray-700 mb-1">What do you need help with?</label>
-                    <textarea name="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-tyOrange focus:border-transparent outline-none transition"></textarea>
-                </div>
-                <button type="submit" class="w-full bg-tyOrange text-white font-bold text-lg py-4 rounded-xl hover:bg-orange-600 transition shadow-lg">
-                    Send Message
-                </button>
-            </form>
-
+    <!-- UPDATED FORM -->
+<form name="contact" method="POST" action="/success.html" data-netlify="true" class="space-y-6">
+    <!-- THIS HIDDEN FIELD IS THE FIX -->
+    <input type="hidden" name="form-name" value="contact" />
+    
+    <div class="grid md:grid-cols-2 gap-6">
+        <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+            <input type="text" name="name" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition">
         </div>
-    </section>
+        <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Business Name</label>
+            <input type="text" name="business" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition">
+        </div>
+    </div>
+    <div>
+        <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+        <input type="email" name="email" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition">
+    </div>
+    <div>
+        <label class="block text-sm font-medium text-gray-700 mb-1">What do you need help with?</label>
+        <textarea name="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition"></textarea>
+    </div>
+    <button type="submit" class="w-full bg-orange-500 text-white font-bold text-lg py-4 rounded-xl hover:bg-orange-600 transition shadow-lg">
+        Send Message
+    </button>
+</form>
 
     <!-- FOOTER -->
     <footer class="bg-tyBlue text-gray-400 py-8 text-center">
