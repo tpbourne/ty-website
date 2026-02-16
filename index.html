@@ -4,7 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ty the AI Guy | Local AI & Web Services</title>
-    <!-- Tailwind CSS for instant styling -->
+    
+    <!-- Instant Favicon (Robot Emoji) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
+
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -18,8 +22,9 @@
             }
         }
     </script>
+    
+    <!-- Smooth Scrolling CSS -->
     <style>
-        /* Smooth scrolling */
         html { scroll-behavior: smooth; }
     </style>
 </head>
@@ -30,9 +35,13 @@
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
                 <div class="flex items-center">
-                    <span class="font-bold text-2xl text-tyBlue">Ty<span class="text-tyOrange">theAIguy</span></span>
+                    <!-- Logo links to top -->
+                    <a href="#" class="font-bold text-2xl text-tyBlue hover:opacity-80 transition">
+                        Ty<span class="text-tyOrange">theAIguy</span>
+                    </a>
                 </div>
-                <div class="flex items-center">
+                <div class="flex items-center gap-4">
+                    <a href="#services" class="hidden md:block text-gray-600 hover:text-tyBlue font-medium transition">Services</a>
                     <a href="#contact" class="bg-tyBlue text-white px-5 py-2 rounded-lg font-medium hover:bg-slate-800 transition">
                         Book a Call
                     </a>
@@ -45,10 +54,10 @@
     <header class="pt-32 pb-20 px-4 text-center bg-gradient-to-b from-white to-gray-100">
         <div class="max-w-4xl mx-auto">
             <span class="text-tyOrange font-bold tracking-wide uppercase text-sm">Local Business Automation</span>
-            <h1 class="text-5xl md:text-6xl font-extrabold text-tyBlue mt-4 mb-6 leading-tight">
+            <h1 class="text-4xl md:text-6xl font-extrabold text-tyBlue mt-4 mb-6 leading-tight">
                 Stop Missing Calls.<br>Start Making Money.
             </h1>
-            <p class="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
+            <p class="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
                 I help local businesses automate busy work, capture every lead, and look professional online. No tech skills required on your end.
             </p>
             <div class="flex flex-col sm:flex-row justify-center gap-4">
@@ -99,18 +108,18 @@
             
             <div class="grid md:grid-cols-3 gap-8">
                 <!-- Service 1 -->
-                <div class="bg-slate-800 p-8 rounded-2xl hover:translate-y-[-5px] transition duration-300">
+                <div class="bg-slate-800 p-8 rounded-2xl hover:translate-y-[-5px] transition duration-300 shadow-xl">
                     <h3 class="text-2xl font-bold text-tyOrange mb-4">Missed Call Text-Back</h3>
                     <p class="text-gray-300 mb-6">If you miss a call, my system automatically texts them back instantly to capture the lead and schedule a time.</p>
                     <ul class="text-sm text-gray-400 space-y-2 mb-8">
                         <li>✓ 24/7 Lead Capture</li>
                         <li>✓ Instant Customer Response</li>
-                        <li>✓ easy Setup</li>
+                        <li>✓ Easy Setup</li>
                     </ul>
                 </div>
 
                 <!-- Service 2 -->
-                <div class="bg-slate-800 p-8 rounded-2xl hover:translate-y-[-5px] transition duration-300 border-2 border-tyOrange relative">
+                <div class="bg-slate-800 p-8 rounded-2xl hover:translate-y-[-5px] transition duration-300 border-2 border-tyOrange relative shadow-xl">
                     <div class="absolute top-0 right-0 bg-tyOrange text-white text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg">POPULAR</div>
                     <h3 class="text-2xl font-bold text-tyOrange mb-4">Website & SEO Tune-Up</h3>
                     <p class="text-gray-300 mb-6">I'll refresh your Google Business Profile and build a modern, high-converting landing page so you show up in local searches.</p>
@@ -122,7 +131,7 @@
                 </div>
 
                 <!-- Service 3 -->
-                <div class="bg-slate-800 p-8 rounded-2xl hover:translate-y-[-5px] transition duration-300">
+                <div class="bg-slate-800 p-8 rounded-2xl hover:translate-y-[-5px] transition duration-300 shadow-xl">
                     <h3 class="text-2xl font-bold text-tyOrange mb-4">24/7 AI Receptionist</h3>
                     <p class="text-gray-300 mb-6">A smart chatbot trained on YOUR business data to answer FAQs and book appointments while you sleep.</p>
                     <ul class="text-sm text-gray-400 space-y-2 mb-8">
@@ -140,50 +149,69 @@
         <div class="max-w-4xl mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
             <div class="w-full md:w-1/3">
                 <!-- Placeholder for your image -->
-                <div class="aspect-square bg-gray-300 rounded-2xl flex items-center justify-center text-gray-500">
-                    [Put Your Photo Here]
+                <div class="aspect-square bg-gray-200 rounded-2xl flex items-center justify-center text-gray-500 overflow-hidden shadow-lg border border-gray-300">
+                    <!-- TIP: Replace this with <img src="your-photo.jpg" class="w-full h-full object-cover"> -->
+                    <span class="text-6xl">👨‍💻</span>
                 </div>
             </div>
             <div class="w-full md:w-2/3">
                 <h2 class="text-3xl font-bold text-tyBlue mb-4">Hi, I'm Ty.</h2>
                 <h3 class="text-xl text-tyOrange font-semibold mb-6">Your Local Tech Partner</h3>
-                <p class="text-gray-600 mb-4">
+                <p class="text-gray-600 mb-4 leading-relaxed">
                     I'm not a big agency that charges you thousands for a website you can't edit. I'm a local developer who focuses on one thing: <strong>using technology to bring you more customers.</strong>
                 </p>
-                <p class="text-gray-600">
+                <p class="text-gray-600 leading-relaxed">
                     Whether you need a simple website or an AI system to handle your booking, I build it, set it up, and make sure you know how to use it.
                 </p>
             </div>
         </div>
     </section>
 
-    <!-- UPDATED FORM -->
-<form name="contact" method="POST" action="/success.html" data-netlify="true" class="space-y-6">
-    <!-- THIS HIDDEN FIELD IS THE FIX -->
-    <input type="hidden" name="form-name" value="contact" />
-    
-    <div class="grid md:grid-cols-2 gap-6">
-        <div>
-            <label class="block text-sm font-medium text-gray-700 mb-1">Name</label>
-            <input type="text" name="name" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition">
+    <!-- CONTACT SECTION (FIXED FOR NETLIFY) -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-2xl mx-auto px-4">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-tyBlue">Let's Get Started</h2>
+                <p class="text-gray-600 mt-2">Fill out the form below for a free 15-minute brainstorm. No pressure, just ideas.</p>
+            </div>
+
+            <!-- 
+               IMPORTANT NETLIFY ATTRIBUTES:
+               1. name="contact"
+               2. method="POST"
+               3. action="/success.html"
+               4. data-netlify="true"
+            -->
+            <form name="contact" method="POST" action="/success.html" data-netlify="true" class="space-y-6">
+                
+                <!-- HIDDEN INPUT REQUIRED FOR NETLIFY -->
+                <input type="hidden" name="form-name" value="contact" />
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                        <input type="text" name="name" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-tyOrange focus:border-transparent outline-none transition">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Business Name</label>
+                        <input type="text" name="business" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-tyOrange focus:border-transparent outline-none transition">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                    <input type="email" name="email" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-tyOrange focus:border-transparent outline-none transition">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">What do you need help with?</label>
+                    <textarea name="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-tyOrange focus:border-transparent outline-none transition"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-tyOrange text-white font-bold text-lg py-4 rounded-xl hover:bg-orange-600 transition shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                    Send Message
+                </button>
+            </form>
+
         </div>
-        <div>
-            <label class="block text-sm font-medium text-gray-700 mb-1">Business Name</label>
-            <input type="text" name="business" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition">
-        </div>
-    </div>
-    <div>
-        <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
-        <input type="email" name="email" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition">
-    </div>
-    <div>
-        <label class="block text-sm font-medium text-gray-700 mb-1">What do you need help with?</label>
-        <textarea name="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-orange-500 focus:border-transparent outline-none transition"></textarea>
-    </div>
-    <button type="submit" class="w-full bg-orange-500 text-white font-bold text-lg py-4 rounded-xl hover:bg-orange-600 transition shadow-lg">
-        Send Message
-    </button>
-</form>
+    </section>
 
     <!-- FOOTER -->
     <footer class="bg-tyBlue text-gray-400 py-8 text-center">
