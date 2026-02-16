@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ty the AI Guy | Local AI & Web Services</title>
+    <!-- Tailwind CSS for instant styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        tyBlue: '#0f172a', /* Deep Trustworthy Blue */
+                        tyOrange: '#f97316', /* Energetic Orange */
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Smooth scrolling */
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="bg-gray-50 text-slate-800 font-sans">
+
+    <!-- NAVIGATION -->
+    <nav class="bg-white shadow-sm fixed w-full z-10 top-0">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="font-bold text-2xl text-tyBlue">Ty<span class="text-tyOrange">theAIguy</span></span>
+                </div>
+                <div class="flex items-center">
+                    <a href="#contact" class="bg-tyBlue text-white px-5 py-2 rounded-lg font-medium hover:bg-slate-800 transition">
+                        Book a Call
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="pt-32 pb-20 px-4 text-center bg-gradient-to-b from-white to-gray-100">
+        <div class="max-w-4xl mx-auto">
+            <span class="text-tyOrange font-bold tracking-wide uppercase text-sm">Local Business Automation</span>
+            <h1 class="text-5xl md:text-6xl font-extrabold text-tyBlue mt-4 mb-6 leading-tight">
+                Stop Missing Calls.<br>Start Making Money.
+            </h1>
+            <p class="text-xl text-gray-600 mb-10 max-w-2xl mx-auto">
+                I help local businesses automate busy work, capture every lead, and look professional online. No tech skills required on your end.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#contact" class="bg-tyOrange text-white text-lg px-8 py-4 rounded-xl font-bold hover:bg-orange-600 transition shadow-lg">
+                    Get a Free Audit
+                </a>
+                <a href="#services" class="bg-white text-tyBlue border border-gray-300 text-lg px-8 py-4 rounded-xl font-bold hover:bg-gray-50 transition">
+                    View Services
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- PAIN POINTS -->
+    <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-tyBlue mb-12">Do You Recognize These Problems?</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Problem 1 -->
+                <div class="p-6 bg-gray-50 rounded-xl border border-gray-100">
+                    <div class="text-4xl mb-4">📞</div>
+                    <h3 class="text-xl font-bold mb-2">The "Missed Money"</h3>
+                    <p class="text-gray-600">You're on a job and miss a call. That customer didn't leave a voicemail; they just called your competitor. You lost a sale.</p>
+                </div>
+                <!-- Problem 2 -->
+                <div class="p-6 bg-gray-50 rounded-xl border border-gray-100">
+                    <div class="text-4xl mb-4">🕸️</div>
+                    <h3 class="text-xl font-bold mb-2">The "Ghost Town" Website</h3>
+                    <p class="text-gray-600">Your website looks like it was made in 2010. It doesn't show up on Google Maps, and customers don't trust it.</p>
+                </div>
+                <!-- Problem 3 -->
+                <div class="p-6 bg-gray-50 rounded-xl border border-gray-100">
+                    <div class="text-4xl mb-4">⏳</div>
+                    <h3 class="text-xl font-bold mb-2">The Time Drain</h3>
+                    <p class="text-gray-600">You spend hours answering the same questions: "What are your hours?" "Do you do free estimates?" Automated chats can handle this.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES (QUICK WINS) -->
+    <section id="services" class="py-20 bg-tyBlue text-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold">Simple Solutions. Fast Results.</h2>
+                <p class="text-gray-400 mt-4">I don't sell "consulting." I sell solved problems.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-slate-800 p-8 rounded-2xl hover:translate-y-[-5px] transition duration-300">
+                    <h3 class="text-2xl font-bold text-tyOrange mb-4">Missed Call Text-Back</h3>
+                    <p class="text-gray-300 mb-6">If you miss a call, my system automatically texts them back instantly to capture the lead and schedule a time.</p>
+                    <ul class="text-sm text-gray-400 space-y-2 mb-8">
+                        <li>✓ 24/7 Lead Capture</li>
+                        <li>✓ Instant Customer Response</li>
+                        <li>✓ easy Setup</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-slate-800 p-8 rounded-2xl hover:translate-y-[-5px] transition duration-300 border-2 border-tyOrange relative">
+                    <div class="absolute top-0 right-0 bg-tyOrange text-white text-xs font-bold px-3 py-1 rounded-bl-lg rounded-tr-lg">POPULAR</div>
+                    <h3 class="text-2xl font-bold text-tyOrange mb-4">Website & SEO Tune-Up</h3>
+                    <p class="text-gray-300 mb-6">I'll refresh your Google Business Profile and build a modern, high-converting landing page so you show up in local searches.</p>
+                    <ul class="text-sm text-gray-400 space-y-2 mb-8">
+                        <li>✓ Google Maps Optimization</li>
+                        <li>✓ Mobile-Friendly Design</li>
+                        <li>✓ Review Management</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-slate-800 p-8 rounded-2xl hover:translate-y-[-5px] transition duration-300">
+                    <h3 class="text-2xl font-bold text-tyOrange mb-4">24/7 AI Receptionist</h3>
+                    <p class="text-gray-300 mb-6">A smart chatbot trained on YOUR business data to answer FAQs and book appointments while you sleep.</p>
+                    <ul class="text-sm text-gray-400 space-y-2 mb-8">
+                        <li>✓ Answers FAQs Instantly</li>
+                        <li>✓ Books Appointments</li>
+                        <li>✓ Zero Staffing Cost</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
+            <div class="w-full md:w-1/3">
+                <!-- Placeholder for your image -->
+                <div class="aspect-square bg-gray-300 rounded-2xl flex items-center justify-center text-gray-500">
+                    [Put Your Photo Here]
+                </div>
+            </div>
+            <div class="w-full md:w-2/3">
+                <h2 class="text-3xl font-bold text-tyBlue mb-4">Hi, I'm Ty.</h2>
+                <h3 class="text-xl text-tyOrange font-semibold mb-6">Your Local Tech Partner</h3>
+                <p class="text-gray-600 mb-4">
+                    I'm not a big agency that charges you thousands for a website you can't edit. I'm a local developer who focuses on one thing: <strong>using technology to bring you more customers.</strong>
+                </p>
+                <p class="text-gray-600">
+                    Whether you need a simple website or an AI system to handle your booking, I build it, set it up, and make sure you know how to use it.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION (NETLIFY FORMS ENABLED) -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-2xl mx-auto px-4">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-tyBlue">Let's Get Started</h2>
+                <p class="text-gray-600 mt-2">Fill out the form below for a free 15-minute brainstorm. No pressure, just ideas.</p>
+            </div>
+
+            <form name="contact" method="POST" data-netlify="true" class="space-y-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                        <input type="text" name="name" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-tyOrange focus:border-transparent outline-none transition">
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-1">Business Name</label>
+                        <input type="text" name="business" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-tyOrange focus:border-transparent outline-none transition">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                    <input type="email" name="email" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-tyOrange focus:border-transparent outline-none transition">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-1">What do you need help with?</label>
+                    <textarea name="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-tyOrange focus:border-transparent outline-none transition"></textarea>
+                </div>
+                <button type="submit" class="w-full bg-tyOrange text-white font-bold text-lg py-4 rounded-xl hover:bg-orange-600 transition shadow-lg">
+                    Send Message
+                </button>
+            </form>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-tyBlue text-gray-400 py-8 text-center">
+        <p>&copy; 2024 Ty the AI Guy. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
